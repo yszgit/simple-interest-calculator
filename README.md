@@ -20,11 +20,19 @@ All inputs must be finite, nonnegative numbers. Use the same currency for the pr
 
 ## Requirements
 
-Python 3. No third-party packages are required.
+Bash and `awk` for the interactive Bash calculator. These are available on Linux, macOS, and Git Bash on Windows. Python 3 is required only for the optional Python version. No third-party Python packages are required.
 
 ## Usage
 
-Clone this repository, open its directory, and run:
+Clone this repository, open its directory, and run the interactive Bash calculator:
+
+```sh
+bash simple-interest.sh
+```
+
+Enter the principal amount, annual interest rate as a percentage, and time period in years when prompted. For inputs `1000`, `5`, and `2`, the simple interest is `100.00` and the total amount is `1100.00`.
+
+The optional Python version accepts the same inputs as command-line arguments:
 
 ```sh
 python simple_interest.py 1000 5 2
@@ -49,7 +57,7 @@ python simple_interest.py --help
 
 ## Contributing and community
 
-Suggestions and improvements are welcome through issues and pull requests. Please follow the [Code of Conduct](CODE_OF_CONDUCT.md).
+Suggestions and improvements are welcome through issues and pull requests. See [Contributing](CONTRIBUTING.md) and follow the [Code of Conduct](CODE_OF_CONDUCT.md).
 
 ## License
 
